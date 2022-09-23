@@ -38,7 +38,7 @@ public class DevTimectrlApiApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		Empresa empresa = Empresa.builder()
-				.nome("NTT DATA BRASIL CONSULTORIA DE NEGOCIOS E T.I. LTDA")
+				.nome("NTTDATA BRASIL CONSULTORIA DE NEGOCIOS E T.I. LTDA")
 				.cnpj("2345")
 				.endereco("Endereço: Avenida CESARIO ALVIM , 5606 - MARILEUSA (LOT.CONVENCIONAL) - UBERLÂNDIA - MG")
 				.tipoEmpresa(TipoEmpresa.CENTER)
