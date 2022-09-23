@@ -1,0 +1,709 @@
+{
+	"info": {
+		"_postman_id": "2b06d134-3a50-4457-9f5f-349bd79410d3",
+		"name": "dev-timectrl-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "empresa",
+			"item": [
+				{
+					"name": "empresas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8383/api/v1/empresas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"empresas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "empresas/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8383/api/v1/empresas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"empresas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "empresas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"nome\": \"NTT DATA BRASIL CONSULTORIA DE NEGOCIOS E T.I. LTDA (UDI)\",\n        \"cnpj\": \"2345\",\n        \"endereco\": \"Endereço: Avenida CESARIO ALVIM , 5606 - MARILEUSA (LOT.CONVENCIONAL) - UBERLÂNDIA - MG\",\n        \"tipoEmpresa\": \"CENTER\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/api/v1/empresas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"empresas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "empresas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"id\": 1,\n        \"nome\": \"NTT DATA BRASIL CONSULTORIA DE NEGOCIOS E T.I. LTDA (UDI1)\",\n        \"cnpj\": \"2345\",\n        \"endereco\": \"Endereço: Avenida CESARIO ALVIM , 5606 - MARILEUSA (LOT.CONVENCIONAL) - UBERLÂNDIA - MG\",\n        \"tipoEmpresa\": \"CENTER\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/api/v1/empresas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"empresas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "empresas",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"id\": 1,\n        \"nome\": \"NTT DATA BRASIL CONSULTORIA DE NEGOCIOS E T.I. LTDA (UDI1)\",\n        \"cnpj\": \"2345\",\n        \"endereco\": \"Endereço: Avenida CESARIO ALVIM , 5606 - MARILEUSA (LOT.CONVENCIONAL) - UBERLÂNDIA - MG\",\n        \"tipoEmpresa\": \"CENTER\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/api/v1/empresas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"empresas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cargos",
+			"item": [
+				{
+					"name": "cargos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8383/api/v1/cargos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"cargos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cargos/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8383/api/v1/cargos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"cargos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cargos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"CSS ESPECIALISTA DE SISTEMAS\",\n    \"empresa\": {\n        \"id\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/api/v1/cargos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"cargos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cargos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"CSS ESPECIALISTA DE SISTEMAS\",\n    \"empresa\": {\n        \"id\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/api/v1/cargos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"cargos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cargos",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"id\": 1,\n        \"nome\": \"NTT DATA BRASIL CONSULTORIA DE NEGOCIOS E T.I. LTDA (UDI1)\",\n        \"cnpj\": \"2345\",\n        \"endereco\": \"Endereço: Avenida CESARIO ALVIM , 5606 - MARILEUSA (LOT.CONVENCIONAL) - UBERLÂNDIA - MG\",\n        \"tipoEmpresa\": \"CENTER\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/api/v1/cargos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"cargos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CentroDeCustos",
+			"item": [
+				{
+					"name": "centro-de-custos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8383/api/v1/centro-de-custos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"centro-de-custos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "centro-de-custos/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8383/api/v1/centro-de-custos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"centro-de-custos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "centro-de-custos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"3072-CABRUDI301S1\",\n    \"empresa\": {\n        \"id\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/api/v1/centro-de-custos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"centro-de-custos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "centro-de-custos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"3072-CABRUDI301S1\",\n    \"empresa\": {\n        \"id\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/api/v1/centro-de-custos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"centro-de-custos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "centro-de-custos",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"id\": 1,\n        \"nome\": \"NTT DATA BRASIL CONSULTORIA DE NEGOCIOS E T.I. LTDA (UDI1)\",\n        \"cnpj\": \"2345\",\n        \"endereco\": \"Endereço: Avenida CESARIO ALVIM , 5606 - MARILEUSA (LOT.CONVENCIONAL) - UBERLÂNDIA - MG\",\n        \"tipoEmpresa\": \"CENTER\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/api/v1/centro-de-custos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"centro-de-custos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Funcionario",
+			"item": [
+				{
+					"name": "funcionarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8383/api/v1/funcionarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"funcionarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "funcionarios/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8383/api/v1/funcionarios/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"funcionarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "funcionarios",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n        \"nome\": \"Rogerio Fontes Tomaz\",\n        \"email\": \"rogerio.fontes.tomaz@nttdata.com\",\n        \"cpf\": \"23432\",\n        \"matricula\": \"2233\",\n        \"dataAdmissao\": \"2022-09-23T10:39:38.001679\",\n        \"ctps\": 123,\n        \"pisPasep\": 233,\n        \"horario\": \"SEG_SEX\",\n        \"funcionario\": null,\n        \"centroDeCusto\": {\n            \"id\": 1\n        },\n        \"cargo\": {\n            \"id\": 1\n        },\n        \"tipoFuncionario\": \"DESENVOVEDOR\"\n    }\n ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/api/v1/funcionarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"funcionarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "funcionarios",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n        \"nome\": \"Rogerio Fontes Tomaz\",\n        \"email\": \"rogerio.fontes.tomaz@nttdata.com\",\n        \"cpf\": \"23434442\",\n        \"matricula\": \"2233\",\n        \"dataAdmissao\": \"2022-09-23T10:39:38.001679\",\n        \"ctps\": 123,\n        \"pisPasep\": 233,\n        \"horario\": \"SEG_SEX\",\n        \"funcionario\": null,\n        \"centroDeCusto\": {\n            \"id\": 1\n        },\n        \"cargo\": {\n            \"id\": 1\n        },\n        \"tipoFuncionario\": \"DESENVOVEDOR\"\n    }\n ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/api/v1/funcionarios/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"funcionarios",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "funcionarios",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"id\": 1,\n        \"nome\": \"NTT DATA BRASIL CONSULTORIA DE NEGOCIOS E T.I. LTDA (UDI1)\",\n        \"cnpj\": \"2345\",\n        \"endereco\": \"Endereço: Avenida CESARIO ALVIM , 5606 - MARILEUSA (LOT.CONVENCIONAL) - UBERLÂNDIA - MG\",\n        \"tipoEmpresa\": \"CENTER\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/api/v1/funcionarios/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"funcionarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ControleDeHoras",
+			"item": [
+				{
+					"name": "controle-de-horass",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8383/api/v1/controle-de-horass",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"controle-de-horass"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "controle-de-horass/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8383/api/v1/controle-de-horass/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"controle-de-horass",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "controle-de-horass",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"funcionario\": {\n            \"id\": 3\n        },\n        \"entradaManha\": \"2022-09-23T10:39:38.097874\",\n        \"saidaManha\": \"2022-09-23T10:39:38.097901\",\n        \"entradaTarde\": \"2022-09-23T10:39:38.097912\",\n        \"saidaTarde\": \"2022-09-23T10:39:38.097919\",\n        \"entradaNoite\": \"2022-09-23T10:39:38.097926\",\n        \"saidaNoite\": \"2022-09-23T10:39:38.097933\",\n        \"entradaMadrugada\": \"2022-09-23T10:39:38.09794\",\n        \"saidaMadrugada\": \"2022-09-23T10:39:38.097947\",\n        \"quantidade\": 11,\n        \"tipoDeDia\": \"DIA_NORMAL_DE_TRABALHO\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/api/v1/controle-de-horass",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"controle-de-horass"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "controle-de-horass",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"funcionario\": {\n            \"id\": 3\n        },\n        \"entradaManha\": \"2022-09-23T10:39:38.097874\",\n        \"saidaManha\": \"2022-09-23T10:39:38.097901\",\n        \"entradaTarde\": \"2022-09-23T10:39:38.097912\",\n        \"saidaTarde\": \"2022-09-23T10:39:38.097919\",\n        \"entradaNoite\": \"2022-09-23T10:39:38.097926\",\n        \"saidaNoite\": \"2022-09-23T10:39:38.097933\",\n        \"entradaMadrugada\": \"2022-09-23T10:39:38.09794\",\n        \"saidaMadrugada\": \"2022-09-23T10:39:38.097947\",\n        \"quantidade\": 11,\n        \"tipoDeDia\": \"DIA_NORMAL_DE_TRABALHO\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/api/v1/controle-de-horass/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"controle-de-horass",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "controle-de-horass",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"id\": 1,\n        \"nome\": \"NTT DATA BRASIL CONSULTORIA DE NEGOCIOS E T.I. LTDA (UDI1)\",\n        \"cnpj\": \"2345\",\n        \"endereco\": \"Endereço: Avenida CESARIO ALVIM , 5606 - MARILEUSA (LOT.CONVENCIONAL) - UBERLÂNDIA - MG\",\n        \"tipoEmpresa\": \"CENTER\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/api/v1/controle-de-horass/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"controle-de-horass",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
